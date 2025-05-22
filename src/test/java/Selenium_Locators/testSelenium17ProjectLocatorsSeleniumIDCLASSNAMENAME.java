@@ -9,12 +9,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chrome.ChromeOptions;
+
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestSelenium17_Project_Locators_Selenium_ID_CLASSNAME_NAME {
+public class testSelenium17ProjectLocatorsSeleniumIDCLASSNAMENAME {
 
     @Description("TC#1 - Verify that with invalid login, error message is displayed!")
     @Owner("Pramod Dutta")
@@ -23,9 +23,9 @@ public class TestSelenium17_Project_Locators_Selenium_ID_CLASSNAME_NAME {
     public void test_vwo_login_invalid_login() throws InterruptedException {
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        ChromeOptions.addArguments("--start-maximized");
+        chromeOptions.addArguments("--start-maximized");
 
-        WebDriver driver = new ChromeDriver(ChromeOptions);
+        WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://app.vwo.com");
 
 //        driver.manage().window().maximize();
